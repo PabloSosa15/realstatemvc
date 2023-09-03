@@ -1,0 +1,28 @@
+@use "sass:math";
+
+.footer {
+    padding: math.div($spaces, 2) 0;
+    background-color: $greyDark;
+    margin-bottom: 0;
+
+    .container-footer {
+        padding: math.div($spaces, 2) 0;
+    }
+
+    a{
+        color: $white;
+        padding: 1rem;
+    }
+
+    .navegacion {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+    }
+    .copyright {
+        color: $white;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+

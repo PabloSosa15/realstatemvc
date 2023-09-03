@@ -1,0 +1,81 @@
+@include tablet {
+    .container-ads{
+        @include grid(3, 2rem);
+
+    }
+}
+
+.ads {
+    background-color: lighten($grey, 5);
+    border: 1px, solid darket($grey, 10);
+    margin-bottom: 2rem;
+
+    .ad-content{
+        padding: 2rem;
+    }
+
+    h3, p {
+        margin: 0rem;
+    }
+
+}
+
+.price {
+    color: $green;
+    font-weight: $bold;
+    font-size: 3rem;
+
+    @include tablet {
+        font-size: 2.5rem;
+    }
+ 
+    @include desktop {
+        font-size: 3rem;
+    }
+}
+
+
+.icons-features{
+    display: flex;
+    list-style: none;
+    padding: 0rem;
+    max-width: 40rem;
+
+    li{
+        flex: 1;
+        display: flex;
+    }
+
+    img{
+        flex: 0 0 3rem;
+        margin-right: 1rem;
+
+        @include tablet {
+            margin-right: 0.5rem;
+        }
+
+        @include desktop {
+            margin-right: 2rem;
+        }
+
+    }
+
+    p{
+        font-weight: $black;
+    }
+    h3 {
+        @include tablet {            
+            width: 18rem;
+            height: 15rem;
+            line-height: 1.3;
+            white-space: normal;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+ 
+        @include desktop {
+            width: auto;
+            height: 10rem;            
+        }
+    }
+}

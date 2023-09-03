@@ -1,0 +1,22 @@
+{
+    "name": "pablo/realstate",
+    "description": "New Project with POO",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Model\\": "./model",
+            "MVC\\": "./",
+            "Controllers\\": "./controllers"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pablo Sosa",
+            "email": "sosapablo0001@gmail.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.7",
+        "phpmailer/phpmailer": "^6.8"
+    }
+}
