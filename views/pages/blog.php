@@ -15,7 +15,7 @@
           </div>
 
           <div class="text-entry">
-            <a href="entrance.html">
+            <a href="entrance">
               <h4>Terrace on the roof of your house</h4>
             </a>
               <p>Written on: <span>20/10/2021</span> by: <span>admin</span></p>
@@ -36,7 +36,7 @@
           </div>
 
           <div class="text-entry">
-            <a href="/entrance">
+            <a href="entrance">
               <h4>Guide to decorating your home</h4>
             </a>
               <p>Written on: <span>20/10/2021</span> by: <span>admin</span></p>
@@ -58,7 +58,7 @@
           </div>
 
           <div class="text-entry">
-            <a href="/entrance">
+            <a href="entrance">
               <h4>Terrace on the roof of your house</h4>
             </a>
               <p>Written on: <span>20/10/2021</span> by: <span>admin</span></p>
@@ -79,7 +79,7 @@
           </div>
 
           <div class="text-entry">
-            <a href="/entrance">
+            <a href="entrance">
               <h4>Guide to decorating your home</h4>
             </a>
               <p>Written on: <span>20/10/2021</span> by: <span>admin</span></p>

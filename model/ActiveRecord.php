@@ -92,9 +92,8 @@ class ActiveRecord{
        $query = "DELETE FROM " . static::$table ." WHERE id = " . self::$db->escape_string($this->id) . " LIMIT 1";
        $result = self::$db->query($query)
        ;
-       return $result;
     
-       if ($result) {
+       if (self::$db->query($query)) {
            $this->imageDelete();
            header('Location: /admin?result=3');
        }

@@ -22,17 +22,13 @@ class Sellers extends ActiveRecord {
         }
     public function validate()
     {
-
-
         //files to a variable
-
-
         if (!$this->name) {
             self::$fixs[] = "The name is required";
         }
-        if (!$this->lastname) {
-            self::$fixs[] = "The last name is required";
-        }
+        // if (!$this->lastname) {
+        //     self::$fixs[] = "The last name is required";
+        // }
         if (!$this->phonenumber) {
             self::$fixs[] = "The phone number is required";
         }

@@ -16,10 +16,12 @@
         @content;
     }
 }
-@mixin grid($columnas, $espaciado ) {
+@mixin grid($columns, $espaciado ) {
     display: grid;
     gap: $spaces;
-    grid-template-columns: repeat($columnas, 1fr);
+    grid-template-columns: repeat($columns, 1fr);
+    grid-template-columns: repeat($columns, minmax(0, 1fr));
+
 }
 
 @mixin button ($bgColor, $display ) {

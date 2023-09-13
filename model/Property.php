@@ -32,11 +32,8 @@ class Property extends ActiveRecord
     }
 
     public function validate() {
-       
-
         //files to a variable
      
-        
         if(!$this->titles) {
            self::$fixs[] = "You must add a title";
         }

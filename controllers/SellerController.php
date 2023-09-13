@@ -63,7 +63,7 @@ class SellerController {
 
             if($id) {
             $type = $_POST['type'];
-            if(validate($type)) {
+            if(validatecontentype($type)) {
                     $seller = Sellers::find($id);
                     $seller->delete();
             }

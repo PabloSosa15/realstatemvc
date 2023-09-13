@@ -128,18 +128,37 @@ class PropertyControllers
         ]);
     }
 
-    public static function delete() {
+    public static function delete(Router $router) {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            //Create id
-            $id = $_POST['id'];
-            $id = filter_var($id, FILTER_VALIDATE_INT);
-            if ($id) {
-                $type = $_POST['type'];
-                if (validatecontentype($type)) {
-                    $property = Property::find($id);
-                    $property->delete();
-                }
-            }
+            // $type = $_POST['id'];
+
+            // if(validatecontentype($type)) {
+                
+            //     $id = $_POST['id'];
+            //     $id = filter_var($id, FILTER_VALIDATE_INT);
+
+            //     $property = Property::find($id);
+            //     $property = $property->delete();
+            // }
+
+            // if($result) {
+            //     header('Location: /properties');
+            // }
+
+
+
+             // Validate id
+             $id = $_POST['id'];
+             $id = filter_var($id, FILTER_VALIDATE_INT);
+            
+             if ($id) {
+                 $type = $_POST['type'];
+                 if (validatecontentype($type)) {
+                     $property = Property::find($id);
+                     $property->delete();
+                    header('Location: /admin?result=3');
+                 }
+             }
         }
     }
 }
